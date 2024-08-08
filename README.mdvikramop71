@@ -1,0 +1,39 @@
+Vikram Singh:
+git clone https://github.com/yourusername/ddos-attack-bot.git
+cd ddos-attack-bot
+
+https://github.com/yourusername/ddos-attack-bot.git
+
+pip install telebot
+pip install flask
+pip install aiogram
+
+bot = telebot.TeleBot('7358358795:AAFvX8PFJxQOHztcUWruyA8ft0i9g8oYjLw')
+
+admin_id = ["5748757818"]
+
+watcher.py
+
+chmod +x *
+python watcher.py
+
+/start - Welcome message.
+/help - Display help information and available commands.
+/bgmi <target> <port> <time> - Initiate a DDoS attack on the specified target.
+/rules - Display rules for using the bot.
+/plan - Display available plans and pricing.
+/mylogs - Show recent command logs for the user.
+/myinfo - Display user's information and approval status.
+
+/add <user id> <duration> - Add a user with a specified approval duration.
+/remove <userId> - Remove a user from the authorized list.
+/allusers - Display all authorized users.
+/logs - Display logs of all commands executed by users.
+/clearlogs - Clear the command logs.
+/clearusers - Clear the list of authorized users.
+/broadcast <message> - Send a broadcast message to all authorized users
+
+/ddos_bot.py - Main bot script containing all functionalities.
+users.txt - File to store allowed user IDs.
+log.txt - File to store command logs.
+keep_alive.py - Script to keep the bot running (e.g., for use with Repl.
