@@ -1,39 +1,91 @@
-Vikram Singh:
-git clone https://github.com/yourusername/ddos-attack-bot.git
-cd ddos-attack-bot
+### Installation
 
-https://github.com/yourusername/ddos-attack-bot.git
+1. Clone the repository:
 
-pip install telebot
-pip install flask
-pip install aiogram
+  
+   git clone https://github.com/yourusername/ddos-attack-bot.git
+   cd ddos-attack-bot
+   
+2. Install the required libraries:
 
-bot = telebot.TeleBot('7358358795:AAFvX8PFJxQOHztcUWruyA8ft0i9g8oYjLw')
+  
+   pip install telebot
+   pip install flask
+   pip install aiogram
+   
+### Configuration
 
-admin_id = ["5748757818"]
+1. Create a bot on Telegram and obtain your bot token.
 
-watcher.py
+2. Replace the placeholder token in the script with your actual bot token:
 
-chmod +x *
-python watcher.py
+  
+   bot = telebot.TeleBot('7358358795:AAFvX8PFJxQOHztcUWruyA8ft0i9g8oYjLw')
+   
+3. Add your admin user IDs in the admin_id list:
 
-/start - Welcome message.
-/help - Display help information and available commands.
-/bgmi <target> <port> <time> - Initiate a DDoS attack on the specified target.
-/rules - Display rules for using the bot.
-/plan - Display available plans and pricing.
-/mylogs - Show recent command logs for the user.
-/myinfo - Display user's information and approval status.
+  
+   admin_id = ["55505865201"]
+   
+### Usage
 
-/add <user id> <duration> - Add a user with a specified approval duration.
-/remove <userId> - Remove a user from the authorized list.
-/allusers - Display all authorized users.
-/logs - Display logs of all commands executed by users.
-/clearlogs - Clear the command logs.
-/clearusers - Clear the list of authorized users.
-/broadcast <message> - Send a broadcast message to all authorized users
+1. Run the bot:
 
-/ddos_bot.py - Main bot script containing all functionalities.
-users.txt - File to store allowed user IDs.
-log.txt - File to store command logs.
-keep_alive.py - Script to keep the bot running (e.g., for use with Repl.
+  
+   chmod +x *
+   python watcher.py
+   
+2. Interact with the bot on Telegram using the available commands.
+
+## Bot Commands
+
+### User Commands
+
+- /start - Welcome message.
+- /help - Display help information and available commands.
+- /bgmi <target> <port> <time> - Initiate a DDoS attack on the specified target.
+- /rules - Display rules for using the bot.
+- /plan - Display available plans and pricing.
+- /mylogs - Show recent command logs for the user.
+- /myinfo - Display user's information and approval status.
+
+### Admin Commands
+
+- /add <userId> <duration> - Add a user with a specified approval duration.
+- /remove <userId> - Remove a user from the authorized list.
+- /allusers - Display all authorized users.
+- /logs - Display logs of all commands executed by users.
+- /clearlogs - Clear the command logs.
+- /clearusers - Clear the list of authorized users.
+- /broadcast <message> - Send a broadcast message to all authorized users.
+
+## File Structure
+
+- ddos_bot.py - Main bot script containing all functionalities.
+- users.txt - File to store allowed user IDs.
+- log.txt - File to store command logs.
+- keep_alive.py - Script to keep the bot running (e.g., for use with Repl.it).
+
+## Logging
+
+The bot logs details of each command executed by users, including user ID, command, target, port, and time. Logs are stored in the log.txt file.
+
+## User Management
+
+The bot supports adding and removing authorized users, as well as setting approval expiry dates for each user. Admins can view the list of all authorized users and clear the user list if needed.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Disclaimer
+
+This bot is intended for educational purposes only. The misuse of this bot may result in legal consequences. The author is not responsible for any misuse of this bot.
+
+---
+
+Note: Replace YOUR_BOT_TOKEN and YOUR_ADMIN_ID with your actual bot token and admin user ID before running the bot. Ensure that you comply with all legal regulations and use this bot responsibly.
+
+## Contributing
+
+If you wish to contribute to this project, feel free to submit a pull request or open an issue on GitHub.
